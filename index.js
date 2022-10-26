@@ -14,7 +14,7 @@ const Manager = require('./lib/Manager');
 const generateTemplate = require('./src/layoutTemplate');
 
 // import generate function 
-const generateHtml = require('./generate-html');
+const generateHtml = require('./generateHTML');
 
 //creating empty array to store user input
 const teamMembersArr = [];
@@ -104,8 +104,8 @@ function userInfo() {
                     }
                 ])
                     .then(response => {
-                        console.log(response.gitHub);
-                        const EngineerTeam = new Engineer(answers.name, answers.email, answers.id, answers.role, response.gitHub)
+                        console.log(response.github);
+                        const EngineerTeam = new Engineer(answers.name, answers.email, answers.id, answers.role, response.github)
                         teamMembersArr.push(EngineerTeam);
                         addOption();
                     })

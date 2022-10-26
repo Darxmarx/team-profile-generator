@@ -7,15 +7,16 @@ let generateIndex = teamObj => {
 
     // iterate over all objects given
     for (let i = 0; i < teamObj.length; i++) {
-        let finalPrompt = teamObj[i].office || teamObj[i].gitHub || teamObj[i].school;
+        // finalPrompt can only be office for managers, github for engineers, or school for interns
+        let finalPrompt = teamObj[i].office || teamObj[i].github || teamObj[i].school;
         let keys = Object.keys(teamObj[i]);
         let lastKey = keys[4];
-        let finalOption = lastKey + ":" + finalPrompt;
+        let finalOption = lastKey + " : " + finalPrompt;
 
         if (lastKey === undefined) {
             finalOption = "";
-        } else if (lastKey === 'gitHub') {
-            finalOption = (`GitHub : <a href = 'https://www.github.com/${teamObj[i].gitHub}'> ${teamObj[i].gitHub}</a>`);
+        } else if (lastKey === 'github') {
+            finalOption = (`GitHub: <a href = 'https://www.github.com/${teamObj[i].github}'> ${teamObj[i].github}</a>`);
             console.log(finalOption);
         } else {
             console.log(finalOption);
@@ -28,12 +29,12 @@ let generateIndex = teamObj => {
          <div class="card col" style="width: 18rem;">
             <div class="card-body card-header">
                 <h5 class="card-title">${name}</h5>
-                <h6 class="card-subtitle mb-2 text-muted">${role}</h6>
+                <h6 class="card-subtitle mb-2">${role}</h6>
             </div>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">Email: <a href=mailto:${email}>${email}</a></li>
                 <li class="list-group-item">Employee ID: ${id}</li>
-                <li class="list-group-item"> ${finalOption}</li> 
+                <li class="list-group-item">${finalOption}</li> 
             </ul>
         </div>`
     }
