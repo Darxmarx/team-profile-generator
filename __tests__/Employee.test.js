@@ -1,7 +1,7 @@
-const Employee = require ('./lib/Employee');
+const employee = require ('./lib/Employee');
 
 // name, email, id, what role
-const employeeTest = new Employee ("Kirby", "kirby@popstar.com", 2, "Employee");
+const employeeTest = new Employee ('Kirby', 'kirby@popstar.com', 2, 'Employee');
 
 describe('Employee', () => {
     it('has a name', () => {
@@ -20,5 +20,4 @@ describe('Employee', () => {
     it('is an employee', () => {
         expect(employeeTest.role).toBe('Employee');
     })
-
 })
