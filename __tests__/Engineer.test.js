@@ -1,7 +1,7 @@
-const engineer = require ('./lib/Engineer');
+const engineer = require ('../lib/Engineer');
 
 // name, email, id, what role, github username
-const engineerTest = new Employee ('Dedede', 'thetrueking@popstar.com', 1, 'Engineer');
+const engineerTest = new Employee ('Dedede', 'thetrueking@popstar.com', 1, 'Engineer', 'dededeHub');
 
 describe('Engineer', () => {
     it('has a name', () => {
@@ -24,7 +24,7 @@ describe('Engineer', () => {
     it('has a github username', () => {
         keys = Object.keys(engineerTest);
         optionKey = keys[4];
-        expect(optionKey).toBe('gitHub');
+        expect(optionKey).toBe('github');
         expect(engineerTest.gitHub).toEqual(expect.any(String));
     })
 })
