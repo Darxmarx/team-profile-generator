@@ -1,7 +1,7 @@
 const engineer = require ('../lib/Engineer');
 
 // name, email, id, what role, github username
-const engineerTest = new Employee ('Dedede', 'thetrueking@popstar.com', 1, 'Engineer', 'dededeHub');
+const engineerTest = new Engineer ('Dedede', 'thetrueking@popstar.com', 1, 'Engineer', 'dededeHub');
 
 describe('Engineer', () => {
     it('has a name', () => {
