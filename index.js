@@ -62,7 +62,7 @@ function userInfo() {
             type: 'list',
             message: "Employee's Role: ",
             name: 'role',
-            choices: ["Manager", "Engineer", "Intern"]
+            choices: ["Employee", "Manager", "Engineer", "Intern"]
         },
     ])
         .then(answers => {

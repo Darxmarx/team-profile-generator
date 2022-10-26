@@ -11,7 +11,7 @@
 
   ## Description
 
-  A handy Node.js-based tool that allows users to easily generate a stylized index.html based on their team of employees, which may be comprised of managers, engineers, and interns.
+  A handy Node.js-based tool that allows users to easily generate a stylized index.html based on their team of employees, which may be comprised of generic employees, managers, engineers, and interns.
   
   ## Installation
 
@@ -27,7 +27,7 @@
 
   ## Preview
 
-  [Check out this link for a video recording of the application in action.](https://drive.google.com/file/d/1zJiX2-fkMFDm2cnPPSlQaoMTo-N2xALk/view)
+  [Check out this link for a video recording of the application in action.](https://drive.google.com/file/d/1tUF8BB3Ytx4PQu2F9zsYOn5v8ByKX98T/view)
   
   ## Contact
 
