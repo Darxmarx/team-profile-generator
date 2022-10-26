@@ -1,0 +1,27 @@
+:root {
+    --text-color: white;
+    --page-bg-color: black;
+}
+
+body {
+    background-color: var(--page-bg-color);
+    color: var(--text-color);
+}
+
+.jumbotron {
+    background-image: linear-gradient(to bottom, lightblue, var(--page-bg-color));
+}
+
+.card {
+    margin: 20px;
+    padding: 0;
+}
+
+.card-header {
+    background-image: linear-gradient(to bottom, lightblue, var(--page-bg-color));
+}
+
+.list-group {
+    margin: 10px;
+    border: solid 2px var(--text-color);
+}

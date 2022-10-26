@@ -54,7 +54,7 @@ let generateIndex = teamObj => {
     
     <body>
         <header class="jumbotron">
-            <span class="navbar-brand mb-0 h1">My Team</span>
+            <h1>My Team</h1>
         </header>
     
         <main class="container">
