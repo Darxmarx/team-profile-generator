@@ -11,7 +11,7 @@ const Intern = require('./lib/Intern');
 const Manager = require('./lib/Manager');
 
 // import layout template file
-const generateTemplate = require('./src/layout-template');
+const generateTemplate = require('./src/layoutTemplate');
 
 // import generate function 
 const generateHtml = require('./generate-html');
